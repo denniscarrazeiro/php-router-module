@@ -1,0 +1,35 @@
+{
+  "name": "denniscarrazeiro/php-router-module",
+  "description": "A library that proposes handle http routes module. Consider that Module goes be use in PHP projects.",
+  "version": "1.0.0",
+  "keywords": [
+    "carrazeiro",
+    "routes",
+    "router"
+  ],
+  "homepage": "https://github.com/denniscarrazeiro/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dennis Santana Carrazeiro",
+      "email": "dennis.carrazeiro@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DennisCarrazeiro\\Php\\Router\\Module\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DennisCarrazeiro\\Php\\Router\\Module\\Router\\Tests\\": "tests/Router/"
+    }
+  }
+}

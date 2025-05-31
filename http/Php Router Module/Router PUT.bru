@@ -1,0 +1,27 @@
+meta {
+  name: Router PUT
+  type: http
+  seq: 7
+}
+
+put {
+  url: http://localhost:8000/put
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": "123",
+    "name": "dennis",
+    "email": "dennis@email.com",
+    "csrf": "123456789"
+  }
+}
+
+body:multipart-form {
+  id: 123
+  name: dennis
+  email: dennis@email.com
+  csrf: 123456789
+}

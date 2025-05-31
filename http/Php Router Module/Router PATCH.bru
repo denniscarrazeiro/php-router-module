@@ -1,0 +1,20 @@
+meta {
+  name: Router PATCH
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://localhost:8000/patch/123
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": "123",
+    "name": "dennis",
+    "email": "dennis@email.com",
+    "csrf": "987654321"
+  }
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Router OPTIONS
+  type: http
+  seq: 10
+}
+
+options {
+  url: http://localhost:8000/options/123?auth=true
+  body: json
+  auth: inherit
+}
+
+params:query {
+  auth: true
+}
+
+body:json {
+  {
+    "id": "123",
+    "name": "dennis",
+    "email": "dennis@email.com",
+    "csrf": "987654321"
+  }
+}

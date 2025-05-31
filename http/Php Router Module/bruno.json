@@ -1,0 +1,11 @@
+{
+  "version": "1",
+  "name": "Php Router Module",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "size": 0.001312255859375,
+  "filesCount": 9
+}

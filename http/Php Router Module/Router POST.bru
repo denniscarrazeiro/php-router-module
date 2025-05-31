@@ -1,0 +1,18 @@
+meta {
+  name: Router POST
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8000/post
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  id: 123
+  name: dennis
+  email: dennis@email.com
+  csrf: post
+}
